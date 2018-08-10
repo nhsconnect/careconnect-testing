@@ -12,7 +12,7 @@ Feature: Condition Tests (version 0.11) .N-4-8
 
         Examples:
             | reference | query                                                         | response | resultCount | conditionIds |
-            | 4.8.dev1  | patient=1                                                     | 200      | 1           |              |
+            | 4.8.dev1  | patient=1                                                     | 200      | >=1         |              |
             | 4.8.dev2  | clinical-status=active&patient=#1010#                         | 200      | 2           | 10006        |
             | 4.8.dev3  | category=symptom                                              | 200      | 0           |              |
             | 4.8.dev4  | category=encounter-diagnosis&patient=#1047#                   | 200      | 1           | 10024        |

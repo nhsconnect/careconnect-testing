@@ -11,7 +11,7 @@ The conformance statement will be used to validate the structure definition of t
         Given FHIR STU3 Server
         When I retrieve the ConformanceStatement format=application/xml
         Then the response code should be 200
-        Then the Header:Content-Type=application/xml+fhir
+        Then the Header:Content-Type=application/fhir+xml
 
     Scenario: 1.4 Conformance Retrieval JSON using OPTIONS
         Given FHIR STU3 Server
@@ -22,7 +22,7 @@ The conformance statement will be used to validate the structure definition of t
         Given FHIR STU3 Server
         When I retrieve the ConformanceStatement format=application/json
         Then the response code should be 200
-        Then the Header:Content-Type=application/json+fhir
+        Then the Header:Content-Type=application/fhir+json
 
     Scenario: 1.6 Conformance Retrieval using OPTIONS
         Given FHIR STU3 Server

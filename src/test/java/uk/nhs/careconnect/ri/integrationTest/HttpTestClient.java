@@ -17,9 +17,9 @@ import java.util.List;
 
 public class HttpTestClient {
 
-    //private static String DEFAULT_SERVER_BASE_URL = "http://127.0.0.1:8080/careconnect-gateway/STU3/";
+   private static String DEFAULT_SERVER_BASE_URL = "http://127.0.0.1:8183/ccri-fhir/STU3/";
 
-    private static String DEFAULT_SERVER_BASE_URL = "https://purple.testlab.nhs.uk/ccri-fhir/STU3/";
+   // private static String DEFAULT_SERVER_BASE_URL = "https://data.developer.nhs.uk/ccri-fhir/STU3/";
     private final FhirContext ctx;
 
     private HttpResponse response = null;

@@ -12,7 +12,7 @@ Feature: Practitioner Tests (version 0.11) .N-4-4
 
         Examples:
             | reference | query                                   | response | resultCount | practitionerIds       |
-            | 4.4.1     | Practitioner?identifier=G2011402        | 200      | 1           | G2011402              |
+            | 4.4.1     | Practitioner?identifier=G6684183        | 200      | 1           | G6684183              |
             | 4.4.2     | Practitioner?identifier=Dummy123        | 200      | 0           |                       |
             | 4.4.3     | Practitioner?address-postalcode=LS15    | 200      | >=50        |                       |
             | 4.4.4     | Practitioner?address-postalcode=LS9 6AU | 200      | >=5         | G8241436 G9351592     |

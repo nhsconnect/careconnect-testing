@@ -12,10 +12,10 @@ Feature: PractitionerRole Tests (version 0.11) .N-4-5
 
         Examples:
             | reference | query                                         | response | resultCount | practitionerRoleIds |
-            | 4.5.1     | PractitionerRole?practitioner=1               | 200      | 2           | G8133438            |
+            | 4.5.1     | PractitionerRole?identifier=C2442626          | 200      | >=1         | C2442626            |
             | 4.5.2     | PractitionerRole?practitioner=Dummy123        | 200      | 0           |                     |
-            | 4.5.3     | PractitionerRole?organization=1               | 200      | >=14        |                     |
-            | 4.5.4     | PractitionerRole?organization=2               | 200      | >=380       |                     |
+            | 4.5.3     | PractitionerRole?organization=1               | 200      | >=2         |                     |
+            | 4.5.4     | PractitionerRole?organization=2               | 200      | >=1         |                     |
             | 4.5.5     | PractitionerRole?address-postalcode=Dummy123  | 404      | 0           |                     |
-            | 4.5.5dev  | PractitionerRole?identifier=G2011402          | 200      | 1           | G2011402            |
+            | 4.5.5dev  | PractitionerRole?identifier=G6684183          | 200      | 1           | G6684183            |
 
